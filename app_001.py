@@ -1,14 +1,13 @@
 import os
 import random
 import telebot
-from telebot import types
+
 
 def read_file(path):
     fo = open(path, 'r')
     text = fo.read()
     fo.close()
     return text.splitlines()
-
 
 apiToken = os.environ.get('API_TOKEN')
 
@@ -17,6 +16,7 @@ path = "./resources/data.txt"
 arr = read_file(path)
 maxLength = len(arr)
 @bot.message_handler(commands=['start'])
+
 
 
 def start(message):
