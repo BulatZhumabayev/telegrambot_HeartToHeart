@@ -1,6 +1,7 @@
 import os
 import random
 import telebot
+from telebot import types
 
 
 def read_file(path):
@@ -16,8 +17,6 @@ path = "./resources/data.txt"
 arr = read_file(path)
 maxLength = len(arr)
 @bot.message_handler(commands=['start'])
-
-
 
 def start(message):
     helloText = """КАК ИСПОЛЬЗОВАТЬ ВОПРОСЫ:
